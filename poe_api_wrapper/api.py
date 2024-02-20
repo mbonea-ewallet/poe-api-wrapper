@@ -94,6 +94,7 @@ def is_valid_url(url):
         return False
     
 def generate_file(file_path: list, proxy: dict=None):
+    EXTENSIONS.update(MEDIA_EXTENSIONS)
     files = []   
     file_size = 0
     for file in file_path: 
